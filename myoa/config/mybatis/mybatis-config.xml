@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE configuration
+PUBLIC "-//mybatis.org//DTD Config 3.0//EN"
+"http://mybatis.org/dtd/mybatis-3-config.dtd">
+<configuration>
+
+	<!-- 起别名 -->
+	<typeAliases>
+		<!-- <typeAlias alias="User" type="cn.neudu.mybatis.pojo.User"/> -->
+		<!-- 批量起别名 : 自动扫描整个包,包中的类的别名就是类名 <package name="cn.neuedu.ssm.pojo"/> -->
+	</typeAliases>
+
+	<!-- 分页插件: 拦截器 -->
+	<plugins>
+		<plugin interceptor="com.github.pagehelper.PageHelper">
+			<!-- 指定数据库的方言（类型）必须 -->
+			<property name="dialect" value="mysql" />
+			<property name="reasonable" value="true" />
+		</plugin>
+	</plugins>
+
+
+</configuration>

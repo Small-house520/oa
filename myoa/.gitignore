@@ -1,0 +1,30 @@
+/build/
+/target/
+node_modules/
+npm-debug.log
+
+# Numerous always-ignore extensions
+*.class
+*.diff
+*.err
+*.orig
+*.log
+*.lock
+*.war
+*.ear
+*.rej
+*.swo
+*.swp
+*.zip
+*.vi
+*~
+
+# OS or Editor folders
+.DS_Store
+._*
+Thumbs.db
+.cache
+.project
+.settings
+*.sublime-project
+*.sublime-workspace
